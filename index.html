@@ -1,1 +1,108 @@
-<p>一二三四五</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单练习</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #344a72;
+    }
+    a{
+       text-decoration: none; 
+    }
+    #bdbj{
+        max-width: 400px;
+        margin: 150px auto;
+    }
+    .form-bt{
+        padding: 20px 25px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 10px;
+    }
+    .form-bt h1,.form-bt p{
+        text-align: center;
+        padding: 5px;
+    }
+    .form-bt .form-srk{
+        margin-top: 15px; 
+    }
+    .form-bt .form-srk label{
+        display: block;
+    } 
+    .form-bt .form-srk input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+    }
+    .form-bt button{
+        border: none;
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+        background: #49c1a2;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .form-bt button:hover{
+        background: #36967d;
+    }
+    .form-bt .zswz{
+        font-size: 13px;
+        padding: 20px;
+    }
+    footer{
+        text-align: center;
+        padding: 20px 0;
+    }
+    footer p{
+        color: #fff;
+    }
+    footer a{
+        color: #49c1a2;
+    }
+</style>
+<body>
+    <div id="bdbj">
+       <div class="form-bt">
+        <h1>注册</h1>
+        <p>只需要几分钟，实现免费注册</p>
+        <form>
+            <div class="form-srk">
+                <label for="name">姓名</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-srk">
+                <label for="email">邮箱</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-srk">
+                <label for="password">密码</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-srk">
+                <label for="password2">确认密码</label>
+                <input type="password2" name="password2" id="password2">
+            </div>
+            <button type="submit" class="zcnn">注册</button>
+            <p class="zswz">
+                请仔细阅读<a href="#"> 条件 </a>和<a href="#"> 隐私政策 </a>条款,如果同意请点击注册按钮
+            </p>
+        </form>
+       </div>
+       <footer>
+        <p>已经拥有账户？<a href="#">去登录</a></p>
+       </footer>
+    </div>
+</body>
+</html>
